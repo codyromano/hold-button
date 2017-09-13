@@ -1,0 +1,37 @@
+/* All text is hidden by default */
+.hold-button-action,
+.hold-button-confirm,
+.hold-button-done {
+  position: relative;
+  z-index: 1;
+  display: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.hold-button-action {
+  color: rgba(192, 57, 43,1.0);
+  font-weight: bold;
+}
+
+/* Show the action text when the button isn't in
+a hover state */
+.hold-button:not(:hover) .hold-button-action {
+  display: block;
+}
+
+.hold-button:hover .hold-button-confirm {
+  display: block;
+}
+
+.hold-button-confirmed,
+.hold-button-confirmed:active {
+  border-color: #ccc;
+  color: #555;
+  background: #eee;
+  cursor: default;
+}
+
+.hold-button-confirmed .hold-button-done {
+  display: block;
+}

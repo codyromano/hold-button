@@ -1,0 +1,29 @@
+.hold-button .bar {
+  content: '';
+  background-color: rgba(231, 76, 60, 0.5);
+  display: block;
+
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+
+  width: 0%;
+  height: 100%;
+}
+
+.hold-button:not(.hold-button-confirmed):active .bar {
+  animation-name: fill-bar;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes fill-bar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}

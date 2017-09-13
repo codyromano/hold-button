@@ -1,0 +1,37 @@
+:root {
+  --color-text: #000;
+  --color-bg: #fff;
+  --color-accent: rgba(255, 0, 0, 0.5);
+}
+
+.hold-button {
+  position: relative;
+
+  /* Simple reset */
+  appearance: none;
+  border: none;
+  outline: none;
+
+  /* Align content vertically and horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-text);
+  background: var(--color-bg);
+
+  display: flex;
+  height: 3.5rem;
+  width: 100%;
+  max-width: 20rem;
+
+  /* Typography */
+  font-family: Avenir, Helvetica;
+  font-size: 1.25rem;
+
+  border: solid var(--color-accent) 0.25rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+
+  transition: all ease 2s;
+}
